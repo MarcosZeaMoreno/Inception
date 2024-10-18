@@ -11,7 +11,7 @@ server {
 
 	index index.php index.html;
 
-	server_name SERVER_NAME;
+	server_name _;
 	
 	location / {
 		if ($scheme = http){
