@@ -17,8 +17,6 @@ services:
   wordpress:
     build: requirements/wordpress/.
     container_name: wp-php
-    ports:
-      - "9000:9000"
     depends_on:
       - mariadb
     volumes:
@@ -31,8 +29,6 @@ services:
   mariadb:
     build: requirements/mariadb/.
     container_name: mariadb
-    ports:
-      - "3306:3306"
     volumes:
       - ./database:/var/lib/mysql
     networks:
