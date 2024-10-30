@@ -1,1 +1,56 @@
-REMOVE ./srcs/.env FILE BEFORE UPLOAD TO INTRA
+# Inception 42 Project
+
+## Overview
+
+The Inception project is part of the 42 curriculum. It focuses on understanding and implementing containerization technologies using Docker. The goal is to set up a container environment to simulate a small-scale production environment.
+
+## Objectives
+
+- Learn the basics of Docker.
+- Set up container environment.
+- Understand container orchestration.
+- Implement a CI/CD pipeline.
+
+## Project Structure
+
+- `srcs/`: Contains all the source files and Dockerfiles.
+- `docker-compose.yml`: Defines the multi-container setup.
+
+## Requirements
+
+- Docker
+- Docker Compose
+
+## Setup
+
+1. **Clone the repository:**
+    ```sh
+    git clone https://github.com/MarcosZeaMoreno/Inception.git
+    cd inception
+    ```
+
+2. **Build and run the containers:**
+    ```sh
+    docker-compose up --build
+    ```
+
+3. **Access the services:**
+    - Web server: `http://localhost:443`
+    - Database: `localhost:3306`
+
+## CI/CD Pipeline
+
+- The project includes a basic CI/CD pipeline using GitHub Actions.
+- The pipeline builds and tests the Docker images on each push to the repository.
+
+## Contributing
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -am 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Create a new Pull Request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
